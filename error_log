@@ -1,0 +1,1 @@
+[04-Sep-2017 20:36:30 UTC] PHP Fatal error:  Call to a member function initialize() on null in /home/conexuso/public_html/application/controllers/Contact.php on line 51
