@@ -17,8 +17,8 @@ class Services extends CI_Controller
 
         $this->data['page']	= 'services';
         #adminbaselink
-        $this->data['uploads'] = "http://localhost:81/shachah_admin/uploads/";
-        $this->data['phone'] = $this->contacts_model->get_contact(array('contact_id'=> 10));
+        $this->data['uploads'] = "http://localhost/shachah_admin/uploads/";
+        $this->data['phone'] = $this->contacts_model->get_contact(array('contact_id'=> 1));
 
     }
 
@@ -38,7 +38,7 @@ class Services extends CI_Controller
         $this->data['page'] = 'faq';
         $this->data['title'] = 'FAQs';
 
-        $this->data['faqs'] = $this->content_model->get_allcontent(array('ctype_id'=> 6));
+        $this->data['faqs'] = $this->content_model->get_allcontent(array('ctype_id'=> 1));
         $this->load->view('faq',$this->data);
     }
 

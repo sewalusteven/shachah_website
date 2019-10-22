@@ -17,9 +17,9 @@ class Gallery extends CI_Controller
 
         $this->data['page']	= 'gallery';
         #adminbaselink
-        $this->data['uploads'] = "http://localhost:81/shachah_admin/uploads/";
-        $this->data['base'] = "http://localhost:81/shachah_admin/";
-        $this->data['phone'] = $this->contacts_model->get_contact(array('contact_id'=> 10));
+        $this->data['uploads'] = "http://localhost/shachah_admin/uploads/";
+        $this->data['base'] = "http://localhost/shachah_admin/";
+        $this->data['phone'] = $this->contacts_model->get_contact(array('contact_id'=> 1));
     }
 
     public function index()

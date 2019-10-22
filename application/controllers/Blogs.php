@@ -17,8 +17,8 @@ class Blogs extends CI_Controller
 
         $this->data['page']	= 'events';
         #adminbaselink
-        $this->data['uploads'] = "http://localhost:81/shachah_admin/uploads/";
-        $this->data['phone'] = $this->contacts_model->get_contact(array('contact_id'=> 10));
+        $this->data['uploads'] = "http://localhost/shachah_admin/uploads/";
+        $this->data['phone'] = $this->contacts_model->get_contact(array('contact_id'=> 1));
     }
 
     public function index()

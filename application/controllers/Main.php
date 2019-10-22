@@ -17,7 +17,7 @@ class Main extends CI_Controller
 
         $this->data['page']	= 'home';
         #adminbaselink
-        $this->data['uploads'] = "http://localhost:81/shachah_admin/uploads/";
+        $this->data['uploads'] = "http://localhost/shachah_admin/uploads/";
         $this->data['phone'] = $this->contacts_model->get_contact(array('contact_id'=> 1));
 
     }
@@ -32,18 +32,18 @@ class Main extends CI_Controller
         $this->data['slides'] = $this->slides_model->get_slides();
 
         #section 1
-        $this->data['core'] = $this->content_model->get_content(array('content_id'=> 20));
-        $this->data['char'] = $this->content_model->get_content(array('content_id'=> 21));
-        $this->data['aim'] = $this->content_model->get_content(array('content_id'=> 22));
+        $this->data['core'] = $this->content_model->get_content(array('content_id'=> 1));
+        $this->data['char'] = $this->content_model->get_content(array('content_id'=> 2));
+        $this->data['aim'] = $this->content_model->get_content(array('content_id'=> 3));
 
         #section 2
-        $this->data['principle'] = $this->content_model->get_content(array('content_id'=> 23));
+        $this->data['principle'] = $this->content_model->get_content(array('content_id'=> 4));
 
         #section 3
         $this->data['galleries'] = $this->gallery_model->get_galleries('',6);
 
         # section 4
-        $this->data['registration'] = $this->content_model->get_content(array('content_id'=> 24));
+        $this->data['registration'] = $this->content_model->get_content(array('content_id'=> 5));
 
         $this->load->view('home',$this->data);
     }
@@ -55,17 +55,17 @@ class Main extends CI_Controller
         $this->data['title'] = 'About Us';
 
         #section 1
-        $this->data['principle'] = $this->content_model->get_content(array('content_id'=> 23));
+        $this->data['principle'] = $this->content_model->get_content(array('content_id'=> 4));
 
         #section 2
-        $this->data['core'] = $this->content_model->get_content(array('content_id'=> 20));
-        $this->data['char'] = $this->content_model->get_content(array('content_id'=> 21));
-        $this->data['aim'] = $this->content_model->get_content(array('content_id'=> 22));
+        $this->data['core'] = $this->content_model->get_content(array('content_id'=> 1));
+        $this->data['char'] = $this->content_model->get_content(array('content_id'=> 2));
+        $this->data['aim'] = $this->content_model->get_content(array('content_id'=> 3));
 
         #section 3
-        $this->data['staff'] = $this->content_model->get_content(array('content_id'=> 31));
-        $this->data['parent'] = $this->content_model->get_content(array('content_id'=> 32));
-        $this->data['registration'] = $this->content_model->get_content(array('content_id'=> 24));
+        $this->data['staff'] = $this->content_model->get_content(array('content_id'=> 6));
+        $this->data['parent'] = $this->content_model->get_content(array('content_id'=> 7));
+        $this->data['registration'] = $this->content_model->get_content(array('content_id'=> 5));
 
         $this->load->view('about',$this->data);
     }
