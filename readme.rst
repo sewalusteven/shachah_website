@@ -68,3 +68,10 @@ Acknowledgement
 
 The CodeIgniter team would like to thank EllisLab, all the
 contributors to the CodeIgniter project and you, the CodeIgniter user.
+
+************
+Website Configuration
+*************
+ Impport the shachah.sql file into your mySQL Database
+ point the codeignitor applications for both this code and for the shacha_backend repository to this database
+ adjust all controller constructs to point to their $data['uploads'] and $data['base'] to the backend domain on the server you are installing these applications.
